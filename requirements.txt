@@ -1,0 +1,8 @@
+streamlit
+pandas
+google-genai
+chromadb
+rank-bm25
+python-dotenv
+slack-bolt
+slack-sdk

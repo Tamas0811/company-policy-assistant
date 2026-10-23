@@ -1,0 +1,4 @@
+Approach,Correct policy (in-scope questions),Unsupported answers (out-of-scope questions),Avg. response time (s),Avg. tokens per question,Errors
+Rules-based (BM25),6/10,4/6,0.0,0,0
+LLM without index,10/10,0/6,8.212,1900,0
+LLM with vector index (RAG),10/10,0/6,3.82,203,0

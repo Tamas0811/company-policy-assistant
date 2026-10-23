@@ -1,0 +1,17 @@
+# secrets
+.env
+.streamlit/secrets.toml
+
+# local environment / caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# rebuilt automatically from company_policies.csv on first run
+chroma_db/
+
+# scratch notebook (contained an API key)
+Untitled.ipynb

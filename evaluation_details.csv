@@ -1,0 +1,49 @@
+approach,question,in_scope,expected_policy,returned_policy,grounding,answer,response_time_s,total_tokens,correct_policy,unsupported_answer
+Rules-based (BM25),How many vacation days do I get each year?,True,Vacation Policy,Vacation Policy,Supported,Employees receive 15 vacation days per year. Unused days may roll over.,0.0003,0,True,False
+LLM without index,How many vacation days do I get each year?,True,Vacation Policy,Vacation Policy,Supported,Employees receive 15 vacation days per year.,0.84,1903,True,False
+LLM with vector index (RAG),How many vacation days do I get each year?,True,Vacation Policy,Vacation Policy,Supported,15 vacation days per year.,1.11,208,True,False
+Rules-based (BM25),How often do I need to change my password?,True,Password Policy,Password Policy,Supported,Passwords must be changed every 90 days and meet complexity requirements.,0.0004,0,True,False
+LLM without index,How often do I need to change my password?,True,Password Policy,Password Policy,Supported,Every 90 days,1.1,1899,True,False
+LLM with vector index (RAG),How often do I need to change my password?,True,Password Policy,Password Policy,Supported,Passwords must be changed every 90 days.,1.38,216,True,False
+Rules-based (BM25),How long can I stay home after having a baby?,True,Parental Leave Policy,Home Office Equipment Policy,Supported,Employees may request ergonomic equipment for remote work.,0.0003,0,False,False
+LLM without index,How long can I stay home after having a baby?,True,Parental Leave Policy,Parental Leave Policy,Supported,Eligible employees may take up to 12 weeks of paid parental leave.,6.84,1910,True,False
+LLM with vector index (RAG),How long can I stay home after having a baby?,True,Parental Leave Policy,Parental Leave Policy,Supported,Up to 12 weeks of paid parental leave.,2.33,216,True,False
+Rules-based (BM25),How many days a week can I work from home?,True,Remote Work Policy,Work From Abroad Policy,Supported,Employees may work abroad for up to 30 days with approval.,0.0003,0,False,False
+LLM without index,How many days a week can I work from home?,True,Remote Work Policy,Remote Work Policy,Supported,Up to three days per week with manager approval.,5.93,1901,True,False
+LLM with vector index (RAG),How many days a week can I work from home?,True,Remote Work Policy,Remote Work Policy,Supported,Up to three days per week with manager approval.,5.05,217,True,False
+Rules-based (BM25),When do I have to hand in receipts after a business trip?,True,Travel Reimbursement Policy,Business Continuity Policy,Supported,Departments must maintain business continuity plans.,0.0002,0,False,False
+LLM without index,When do I have to hand in receipts after a business trip?,True,Travel Reimbursement Policy,Travel Reimbursement Policy,Supported,Within 30 days.,1.55,1905,True,False
+LLM with vector index (RAG),When do I have to hand in receipts after a business trip?,True,Travel Reimbursement Policy,Travel Reimbursement Policy,Supported,Within 30 days.,2.35,204,True,False
+Rules-based (BM25),What should I wear to the office?,True,Dress Code Policy,Office Access Policy,Supported,Access badges must be worn and not shared.,0.0002,0,False,False
+LLM without index,What should I wear to the office?,True,Dress Code Policy,Dress Code Policy,Supported,Employees are expected to dress in business casual attire.,5.88,1902,True,False
+LLM with vector index (RAG),What should I wear to the office?,True,Dress Code Policy,Dress Code Policy,Supported,Business casual attire.,6.03,192,True,False
+Rules-based (BM25),Can I use my work laptop for personal things?,True,Laptop Usage Policy,Laptop Usage Policy,Supported,Company laptops must be used for business purposes only.,0.0002,0,True,False
+LLM without index,Can I use my work laptop for personal things?,True,Laptop Usage Policy,Laptop Usage Policy,Supported,"No, company laptops must be used for business purposes only.",6.14,1907,True,False
+LLM with vector index (RAG),Can I use my work laptop for personal things?,True,Laptop Usage Policy,Laptop Usage Policy,Supported,"No, company laptops must be used for business purposes only.",4.27,207,True,False
+Rules-based (BM25),How long is the trial period for new hires?,True,Probation Period Policy,Probation Period Policy,Supported,New hires are subject to a 90-day probation period.,0.0002,0,True,False
+LLM without index,How long is the trial period for new hires?,True,Probation Period Policy,Probation Period Policy,Supported,90 days,7.98,1898,True,False
+LLM with vector index (RAG),How long is the trial period for new hires?,True,Probation Period Policy,Probation Period Policy,Supported,90 days,8.27,204,True,False
+Rules-based (BM25),Can I report unethical behaviour without giving my name?,True,Whistleblower Policy,Whistleblower Policy,Supported,Employees may report unethical behavior anonymously.,0.0004,0,True,False
+LLM without index,Can I report unethical behaviour without giving my name?,True,Whistleblower Policy,Whistleblower Policy,Supported,"Yes, employees may report unethical behavior anonymously.",9.1,1903,True,False
+LLM with vector index (RAG),Can I report unethical behaviour without giving my name?,True,Whistleblower Policy,Whistleblower Policy,Supported,"Yes, employees may report unethical behavior anonymously.",5.66,196,True,False
+Rules-based (BM25),Can I get an ergonomic chair for my home office?,True,Home Office Equipment Policy,Home Office Equipment Policy,Supported,Employees may request ergonomic equipment for remote work.,0.0002,0,True,False
+LLM without index,Can I get an ergonomic chair for my home office?,True,Home Office Equipment Policy,Home Office Equipment Policy,Supported,"Yes, employees may request ergonomic equipment for remote work.",2.03,1907,True,False
+LLM with vector index (RAG),Can I get an ergonomic chair for my home office?,True,Home Office Equipment Policy,Home Office Equipment Policy,Supported,"Yes, employees may request ergonomic equipment for remote work.",8.31,201,True,False
+Rules-based (BM25),Can I bring my dog to the office?,False,,Office Access Policy,Supported,Access badges must be worn and not shared.,0.0002,0,False,True
+LLM without index,Can I bring my dog to the office?,False,,None,Declined,No matching company policy found.,12.53,1893,False,False
+LLM with vector index (RAG),Can I bring my dog to the office?,False,,None,Declined,No matching company policy found.,1.08,199,False,False
+Rules-based (BM25),What is the company's current share price?,False,,None,Declined,No matching company policy found.,0.0002,0,False,False
+LLM without index,What is the company's current share price?,False,,None,Declined,No matching company policy found.,0.69,1894,False,False
+LLM with vector index (RAG),What is the company's current share price?,False,,None,Declined,No matching company policy found.,0.9,189,False,False
+Rules-based (BM25),How big is the annual salary increase?,False,,Cybersecurity Awareness Policy,Supported,Employees must complete annual cybersecurity training.,0.0002,0,False,True
+LLM without index,How big is the annual salary increase?,False,,None,Declined,No matching company policy found.,62.89,1892,False,False
+LLM with vector index (RAG),How big is the annual salary increase?,False,,None,Declined,No matching company policy found.,1.33,198,False,False
+Rules-based (BM25),Is lunch in the canteen free?,False,,None,Declined,No matching company policy found.,0.0002,0,False,False
+LLM without index,Is lunch in the canteen free?,False,,None,Declined,No matching company policy found.,1.4,1891,False,False
+LLM with vector index (RAG),Is lunch in the canteen free?,False,,None,Declined,No matching company policy found.,0.94,193,False,False
+Rules-based (BM25),What is the maximum hotel price per night on business trips?,False,,Business Continuity Policy,Supported,Departments must maintain business continuity plans.,0.0003,0,False,True
+LLM without index,What is the maximum hotel price per night on business trips?,False,,None,Declined,No matching company policy found.,4.53,1896,False,False
+LLM with vector index (RAG),What is the maximum hotel price per night on business trips?,False,,None,Declined,No matching company policy found.,6.44,202,False,False
+Rules-based (BM25),How many weeks of notice do I need to give before resigning?,False,,Promotion Policy,Supported,Promotions are based on performance and business needs.,0.0005,0,False,True
+LLM without index,How many weeks of notice do I need to give before resigning?,False,,None,Declined,No matching company policy found.,1.97,1897,False,False
+LLM with vector index (RAG),How many weeks of notice do I need to give before resigning?,False,,None,Declined,No matching company policy found.,5.67,212,False,False
